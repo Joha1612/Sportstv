@@ -1,12 +1,9 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.*\\.m3u)$",
       "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
+        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" }
       ]
     }
   ]
